@@ -7,6 +7,7 @@ pipeline {
                 script {
                     log.Info("Test Info")
                     log.Error("Test Error")
+                    sh "sleep 10"
                 }
             }
         }
