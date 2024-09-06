@@ -1,0 +1,9 @@
+@Library("shared-library")
+pipeline {
+    agent any
+    stages {
+        steps {
+            helloWorld()
+        }
+    }
+}
