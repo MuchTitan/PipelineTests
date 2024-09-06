@@ -1,9 +1,11 @@
-@Library("shared-library")
+@Library("shared-libary@main") _
 pipeline {
     agent any
     stages {
-        steps {
-            helloWorld()
+        stage('Example') {
+            steps {
+                helloWorld() 
+            }
         }
     }
 }
