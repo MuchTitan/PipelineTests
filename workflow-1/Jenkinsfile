@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                helloWorld() 
+                log.Info("Test Info")
+                log.Error("Test Error")
             }
         }
     }
