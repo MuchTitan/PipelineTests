@@ -5,7 +5,10 @@ pipeline {
         stage('Example') {
             steps {
                 script {
-                    log.Info("Test Info")
+                    log.Info("Info")
+                    log.Warning("Warning")
+                    log.Debug("Debug")
+                    log.Error("Error")
                 }
             }
         }
